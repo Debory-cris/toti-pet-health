@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" style={{ colorScheme: 'light' }}>
       <body
         className={`${chironGoRoundTC.variable} antialiased`}
       >
