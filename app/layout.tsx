@@ -23,6 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" style={{ colorScheme: 'light' }}>
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
       <body
         className={`${chironGoRoundTC.variable} antialiased`}
       >

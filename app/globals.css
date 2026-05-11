@@ -9,9 +9,21 @@
   --text-color: #1a0540;
 }
 
+html,
+body {
+  background-color: white !important;
+  color-scheme: light only !important;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: light only;
+  }
+
+  html,
+  body {
+    background-color: white !important;
+    color-scheme: light only !important;
   }
 }
 
