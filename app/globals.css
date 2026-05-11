@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
 :root {
+  color-scheme: light only;
   --color-primary: #5e17eb;
   --color-secondary: #ff4dcc;
   --color-tertiary: #26ff91;
   --background-color: #f4f4f9;
   --text-color: #1a0540;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light only;
+  }
 }
 
 @keyframes float {
