@@ -16,6 +16,22 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
+  * {
+    background-color: revert !important;
+    color: revert !important;
+  }
+
+  html {
+    background-color: white !important;
+    color: #1a0540 !important;
+  }
+}
+
+:root {
+  forced-color-adjust: none;
+}
+
+@media (prefers-color-scheme: dark) {
   :root {
     color-scheme: light only;
   }
