@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  color-scheme: light only;
+@theme {
   --color-primary: #5e17eb;
   --color-secondary: #ff4dcc;
   --color-tertiary: #26ff91;
@@ -9,38 +8,14 @@
   --text-color: #1a0540;
 }
 
+:root {
+  color-scheme: light only;
+}
+
 html,
 body {
   background-color: white !important;
   color-scheme: light only !important;
-}
-
-@media (prefers-color-scheme: dark) {
-  * {
-    background-color: revert !important;
-    color: revert !important;
-  }
-
-  html {
-    background-color: white !important;
-    color: #1a0540 !important;
-  }
-}
-
-:root {
-  forced-color-adjust: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: light only;
-  }
-
-  html,
-  body {
-    background-color: white !important;
-    color-scheme: light only !important;
-  }
 }
 
 @keyframes float {
